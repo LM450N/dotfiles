@@ -10,13 +10,24 @@
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+      	ui = always
+[color "diff"]
+      	meta = yellow bold
+      	commit = green bold
+      	frag = magenta bold
+      	old = red bold
+      	new = green bold
+      	whitespace = red reverse
+[color "diff-highlight"]
+      	oldNormal = red bold
+      	oldHighlight = "red bold 52"
+      	newNormal = "green bold"
+      	newHighlight = "green bold 22"
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+        # insanely beautiful diffs
+        pager = diff-so-fancy | less -r
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -36,3 +47,5 @@
 [user]
 	email = mason@sekaijuu.de
 	name = Mason Louchart
+[commit]
+        template = ~/.git_commit_msg

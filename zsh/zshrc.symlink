@@ -1,8 +1,8 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-# your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+# your project folder that we can `w [tab]` to
+export PROJECTS=~/workspace
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -48,3 +48,17 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+# Enable Powerline Status for ZSH prompt
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# Add SCM Breeze to PATH
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+
+# Add Quick Command-line File completion to PATH
+[[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
+qfc_quick_command 'cd' '\C-b' 'cd $0'
+qfc_quick_command 'vim' '\C-p' 'vim $0'
+
+# Travis CI
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh

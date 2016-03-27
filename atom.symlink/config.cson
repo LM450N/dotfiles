@@ -1,0 +1,52 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "43daf431-d873-4f4c-b77e-7076682a4a99"
+  core:
+    disabledPackages: [
+      "exception-reporting"
+      "metrics"
+      "atom-polymer"
+    ]
+    followSymlinks: false
+    hideGitIgnoredFiles: true
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+    ]
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  docblockr: {}
+  editor:
+    fontFamily: "Menlo"
+    fontSize: 13
+    invisibles: {}
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+  floobits:
+    audioOnly: true
+  "jscs-fixer":
+    preset: "google"
+  "linter-jscs":
+    preset: "google"
+  "merge-conflicts": {}
+  minimap:
+    plugins:
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
+      "text.html.basic"
+    ]
+  welcome:
+    showOnStartup: false
