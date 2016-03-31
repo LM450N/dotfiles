@@ -9,6 +9,10 @@ export PATH="$PATH:$RVM_DIR"
 export NVM_DIR=$HOME/.nvm
 export PATH="$PATH:$NVM_DIR"
 
+# NPM (Node Package Manager)
+export NPM_DIR=$HOME/.npm
+export PATH="$PATH:$NPM_DIR"
+
 # Google Service Util
 export GSUTIL=$HOME/.google/gsutil
 export PATH="$PATH:$GSUTIL"
