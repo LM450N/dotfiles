@@ -52,7 +52,10 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 # Enable Powerline Status for ZSH prompt
 . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
-# Add SCM Breeze to PATH
+# Load NVM
+source $NVM_DIR/nvm.sh
+
+# Load SCM Breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # Add Quick Command-line File completion to PATH
