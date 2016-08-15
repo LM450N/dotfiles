@@ -6,4 +6,7 @@
 # IntelliJ setting files
 .idea
 *.iml
+
+# Output directories and external resources
 out/
+lib/

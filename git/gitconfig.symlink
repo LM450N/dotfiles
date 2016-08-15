@@ -26,6 +26,7 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+        ignorecase = false
         # insanely beautiful diffs
         pager = diff-so-fancy | less -r
 [apply]
