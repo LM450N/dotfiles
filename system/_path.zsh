@@ -13,6 +13,10 @@ export PATH="$PATH:$NVM_DIR"
 export NPM_DIR=$HOME/.npm
 export PATH="$PATH:$NPM_DIR"
 
+# Go lang
+export GOPATH=/usr/local/opt/go/libexec/bin
+export PATH="$PATH:$GOPATH"
+
 # Google Service Util
 export GSUTIL=$HOME/.google/gsutil
 export PATH="$PATH:$GSUTIL"
