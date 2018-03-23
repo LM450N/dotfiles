@@ -65,4 +65,3 @@ qfc_quick_command 'vim' '\C-p' 'vim $0'
 
 # Travis CI
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
-=======

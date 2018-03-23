@@ -17,10 +17,6 @@ export PATH="$PATH:$NPM_DIR"
 export GOPATH=/usr/local/opt/go/libexec/bin
 export PATH="$PATH:$GOPATH"
 
-# Google Service Util
-export GSUTIL=$HOME/.google/gsutil
-export PATH="$PATH:$GSUTIL"
-
 # Google App Engine (Python)
-export GOOGLE_APP_ENGINE=$HOME/.google/google_appengine
-export PATH="$PATH:$GOOGLE_APP_ENGINE"
+export GAE=$HOME/.google/google_appengine
+export PATH="$PATH:$GAE"

@@ -2,16 +2,28 @@
   "atom-beautify":
     general:
       _analyticsUserId: "43daf431-d873-4f4c-b77e-7076682a4a99"
-    js:
+    html:
+      indent_scripts: "keep"
       indent_size: 2
+      wrap_attributes_indent_size: 2
+    js:
+      break_chained_methods: true
+      indent_size: 2
+    json:
+      indent_size: 2
+    python:
+      sort_imports: true
+  "autocomplete-python":
+    useKite: false
   core:
     disabledPackages: [
       "exception-reporting"
       "metrics"
       "atom-polymer"
-      "spell-check"
-      "floobits"
       "polymer-atom"
+      "spell-check"
+      "linter-jshint"
+      "linter-jscs"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -23,6 +35,7 @@
       "tmp"
       "vendor"
     ]
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "monokai"
@@ -30,21 +43,31 @@
   docblockr: {}
   editor:
     fontFamily: "Menlo"
-    fontSize: 13
     invisibles: {}
     showIndentGuide: true
+    softWrap: true
     softWrapAtPreferredLineLength: true
+    zoomFontWhenCtrlScrolling: true
   floobits:
     audioOnly: true
   "jscs-fixer":
     preset: "google"
+  "linter-eslint":
+    lintHtmlFiles: true
+    useGlobalEslint: true
   "linter-jscs":
     preset: "google"
+  "linter-jshint": {}
+  "linter-pycodestyle": {}
+  "linter-ui-default":
+    panelHeight: 69
   "merge-conflicts": {}
   minimap:
     plugins:
       pigments: true
       pigmentsDecorationsZIndex: 0
+  "python-autopep8":
+    formatOnSave: true
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":
@@ -53,6 +76,7 @@
       "source.gfm"
       "text.git-commit"
       "text.html.basic"
+      "source.python"
     ]
   welcome:
     showOnStartup: false

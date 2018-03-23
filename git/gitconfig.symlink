@@ -2,13 +2,14 @@
 [include]
         path = ~/.gitconfig.local
 [hub]
-        protocol = https
+	protocol = ssh
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+	unpack-refs = unpack-refs = "!bash -c 'IFS=$''\\n''; for f in $(git show-ref --heads); do /bin/echo ''Writing  '' $(echo $f | cut -c42-); echo $(echo $f | cut -c1-40) > \"${GIT_DIR:-.git}/$(echo $f | cut -c42-)\"; done'"
 [color]
       	ui = always
 [color "diff"]
@@ -50,3 +51,11 @@
 	name = Mason Louchart
 [commit]
         template = ~/.git_commit_msg
+[rerere]
+	enabled = true
+[user]
+	name = Mason Louchart
+	signingkey = A2B44053B5F3B6A5
+	email = mason@sekaijuu.de
+[credential]
+	helper = osxkeychain
