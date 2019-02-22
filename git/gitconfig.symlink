@@ -33,3 +33,6 @@
         default = simple
 [credential]
 	helper = osxkeychain
+[user]
+	email = mason@sekaijuu.de
+	name = Mason Louchart
