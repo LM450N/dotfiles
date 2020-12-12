@@ -49,9 +49,6 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-# Enable Powerline Status for ZSH prompt
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
 # pyenv-installer
 export PATH="/Users/mason/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
